@@ -48,6 +48,8 @@ section {
   padding-right: 15px;
   margin: 0 auto;
   display: flex;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .header-menu {
   display: flex;
@@ -56,8 +58,8 @@ section {
 .header-menu-list {
   display: flex;
   gap: 40px;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  /* padding-top: 24px;
+  padding-bottom: 24px; */
 }
 .header-contacts {
   display: flex;
@@ -69,8 +71,8 @@ section {
   display: flex;
   align-items: center;
   gap: 40px;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  /* padding-top: 24px;
+  padding-bottom: 24px; */
 }
 .container {
   width: 1158px;
@@ -94,8 +96,8 @@ section {
   color: #4d5ae5;
   margin-right: 76px;
   margin-left: 0;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  /* padding-top: 24px;
+  padding-bottom: 24px; */
 }
 .logo-black {
   font-family: "Raleway", sans-serif;
