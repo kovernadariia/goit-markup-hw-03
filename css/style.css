@@ -1,13 +1,85 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   color: #434455;
   background-color: #ffffff;
 }
-ul {
-  list-style: none;
-}
 a {
   text-decoration: none;
+}
+section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.container-header {
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  display: flex;
+}
+.header-menu {
+  display: flex;
+  align-items: center;
+}
+.header-menu-list {
+  display: flex;
+  gap: 40px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.header-contacts {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  gap: 40px;
+}
+.header-contacts-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.container {
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+.container-logo {
+  margin-right: 76px;
+  margin-left: 0;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .logo {
   font-family: "Raleway", sans-serif;
@@ -17,6 +89,8 @@ a {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  margin-right: 76px;
+  margin-left: 0;
 }
 .logo-black {
   font-family: "Raleway", sans-serif;
@@ -76,6 +150,11 @@ a {
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
+  margin-bottom: 48px;
+  max-width: 496px;
+  display: block;
+  margin: auto;
+  margin-bottom: 48px;
 }
 .order-button {
   font-family: inherit;
@@ -86,6 +165,13 @@ a {
   color: #fff;
   background-color: #4d5ae5;
   cursor: pointer;
+  border-radius: 4px;
+  padding: 16px 32px;
+  height: 56px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  border: none;
+  display: block;
+  margin: auto;
 }
 .order-button:hover {
   background-color: #404bbf;
@@ -94,13 +180,27 @@ a {
   background-color: #404bbf;
 }
 /* --------------------------BENEFITS-------------------------------- */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
 .section-benefits {
-  background-color: #f4f4fd;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .benefits-list {
+  display: flex;
+  gap: 24px;
 }
 .benefits-list-item {
+  width: calc((100% - 3 * 24px) / 4);
 }
 .benefits-subtitle {
   font-weight: 500;
@@ -108,6 +208,7 @@ a {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 .benefits-text {
   font-weight: 400;
@@ -117,6 +218,9 @@ a {
   color: #434455;
 }
 /* ---------------OUR TEAM------------- */
+.team-container {
+  padding: 32px 16px;
+}
 .section-our-team {
   background-color: #f4f4fd;
 }
@@ -128,13 +232,17 @@ a {
   text-align: center;
   color: #2e2f42;
   text-transform: capitalize;
+  margin-bottom: 72px;
 }
 .our-team-list {
+  display: flex;
+  gap: 24px;
 }
 .our-team-list-item {
   background-color: #ffffff;
 }
 .img {
+  display: block;
 }
 .our-team-name {
   font-weight: 500;
@@ -143,6 +251,7 @@ a {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 .our-team-job {
   font-weight: 400;
@@ -155,6 +264,9 @@ a {
 /* ----------------------PORTFOLIO------------------------- */
 .our-portfolio {
 }
+.portfolio-container {
+  padding: 32px 16px;
+}
 .section-our-portfolio-title {
   font-weight: 700;
   font-size: 36px;
@@ -163,8 +275,13 @@ a {
   text-align: center;
   color: #2e2f42;
   text-transform: capitalize;
+  margin-bottom: 72px;
 }
 .portfolio-list {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  flex-basis: calc((100% - 48px) / 3);
 }
 .portfolio-list-item {
   background-color: #ffffff;
@@ -198,6 +315,8 @@ a {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  margin-bottom: 16px;
+  margin-right: auto;
 }
 .logo-white {
   color: #f4f4fd;
@@ -214,4 +333,10 @@ a {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+  width: 264px;
+  padding-bottom: 100px;
+}
+.container-logo-footer {
+  padding-top: 100px;
+  padding-bottom: 24px;
 }
