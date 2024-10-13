@@ -42,7 +42,7 @@ section {
 .header {
   border-bottom: 1px solid #e7e9fc;
 }
-.container {
+.container-header {
   width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
@@ -72,19 +72,19 @@ section {
   padding-top: 24px;
   padding-bottom: 24px;
 }
-/* .container {
+.container {
   width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-} */
+}
 .container-logo {
   margin-right: 76px;
   margin-left: 0;
   padding-top: 24px;
   padding-bottom: 24px;
 }
-.logo-link {
+.logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -93,8 +93,9 @@ section {
   text-transform: uppercase;
   color: #4d5ae5;
   margin-right: 76px;
+  margin-left: 0;
 }
-.logo-black-text {
+.logo-black {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -305,22 +306,7 @@ section {
 .portfolio-list-item:nth-child(n + 4) {
   margin-bottom: 0;
 } */
-.portfolio-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px 0; /* Скидаємо horizontal gap */
-}
-.portfolio-list-item {
-  background-color: #ffffff;
-  margin-bottom: 48px;
-  margin-right: 24px; /* Встановлюємо right margin */
-}
-.portfolio-list-item:nth-child(3n) {
-  margin-right: 0; /* Обнуляємо margin-right для кожного третього елемента */
-}
-.portfolio-list-item:nth-last-child(-n + 3) {
-  margin-bottom: 0; /* Скидаємо нижній відступ для останніх елементів */
-}
+
 .portfolio-list-image {
 }
 .porfolio-subtitle {
