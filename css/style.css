@@ -280,6 +280,7 @@ section {
 .portfolio-container {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
+  border-top: none;
 }
 .section-our-portfolio-title {
   font-weight: 700;
@@ -300,7 +301,6 @@ section {
 }
 .portfolio-list-item {
   background-color: #ffffff;
-  margin-right: 24px;
   margin-bottom: 48px;
 }
 .portfolio-list-item:nth-child(n + 4) {
